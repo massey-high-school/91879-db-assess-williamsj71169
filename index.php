@@ -9,7 +9,7 @@
     <meta name="author" content="Put your name here">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Website Title goes here</title>
+    <title>Food Reviews</title>
     
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
@@ -35,7 +35,7 @@
             </div>    <!-- / logo -->
         </a>
             
-            <h1>Website Name</h1>
+            <h1>The Website Of Food Reviews</h1>
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
