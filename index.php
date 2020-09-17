@@ -47,7 +47,10 @@
         
         
         <div class="box side">
-            Side Bar goes here
+            <?php
+     include "bottom_bit.php";
+?>
+
         </div>
         
         <div class="box main">
@@ -69,7 +72,7 @@
         
 
         <div class="box footer">
-            CC Jessika Williams 20XX
+            CC Jessika Williams 2020
         </div>    <!-- / footer -->
     
     </div>  <!-- / wrapper  -->
@@ -77,5 +80,5 @@
 </body>        
 
 <?php
-    include "bottom_bit.php";
+    /// include "bottom_bit.php"; ///
 ?>

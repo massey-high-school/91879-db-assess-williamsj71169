@@ -28,7 +28,7 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     background-color: #aed6f1;
 }
 
@@ -64,6 +64,7 @@ body {
 }
 
 .side {
+    padding: 10px;
     grid-area: side;
     background-color: #21618c ;
 }
@@ -121,6 +122,13 @@ a:hover{color: #000;}    /* Black*/
     font-family: 'Ubuntu', sans-serif;
     color: #593849; /* purple */
     font-weight: bold;
+}
+
+
+/* form formatting */
+
+.search {
+    width: 200px;
 }
 
 
