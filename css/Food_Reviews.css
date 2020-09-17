@@ -29,14 +29,14 @@ body {
 .box {
     padding: 20px;
     /* border-radius: 10px; */
-    background-color: #ddd;
+    background-color: #aed6f1;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
+    background-color: #3498db;  /* dark grey */
 }
 
 /* Set font on dark areas to white */
@@ -58,20 +58,20 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: #DDD;  /* silver */
+    background-color: #aed6f1;  /* silver */
     font-size: 150%;
     text-align: center;
 }
 
 .side {
     grid-area: side;
-    background-color: #333;
+    background-color: #21618c ;
 }
 
 .main {
     grid-area: main;
-    background-color: #EEE;  /* very pale grey */
-    border: solid 1px #CCC;
+    background-color: #ebf5fb;  /* very pale grey */
+    border: solid 1px #ebf5fb;
 }
 
 
@@ -88,14 +88,14 @@ h1, h2, h3, h4 {
 
 /* Navigation Links */
 .nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+.nav a:link, .nav a:visited {color: #ca6f1e;} /*dark red */
+.nav a:hover {color: #000; text-decoration: none;} /* chocolate brown */
 
 
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
+a:link{color: #ca6f1e ;} /*dark_red */
+a:visited{color: #f1c40f;} /* dark blue */
 a:hover{color: #000;}    /* Black*/
 
 

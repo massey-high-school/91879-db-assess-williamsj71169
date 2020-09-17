@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Put Content Here">
+    <meta name="description" content="Food Review Database">
     <meta name="keywords" content="Put keywords here">
-    <meta name="author" content="Put your name here">
+    <meta name="author" content="Jessika Williams">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Food Reviews</title>
@@ -15,15 +15,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
-    <link rel="stylesheet" href="css/foo.css"> 
+    <link rel="stylesheet" href="css/Food_Reviews.css"> 
     
 </head>
     
 <body>
     
     <div class="wrapper">
-    
-
         
         <div class="box banner">
             
@@ -71,9 +69,13 @@
         
 
         <div class="box footer">
-            CC yourname 20XX
+            CC Jessika Williams 20XX
         </div>    <!-- / footer -->
     
     </div>  <!-- / wrapper  -->
     
 </body>        
+
+<?php
+    include "bottom_bit.php";
+?>
