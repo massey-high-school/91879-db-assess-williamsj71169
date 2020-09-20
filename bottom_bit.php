@@ -6,69 +6,127 @@
 
     <hr /> 
 
-    <!--- START OF Title Search -->
+    <!--- START OF Name Search -->
 
-    <form method="post" action="title_search.php" enctype="multipart/form-data">
+    <form method="post" action="name_search.php" enctype="multipart/form-data">
 
-        <input class="search" type="text" name="title" size="40" value="" required placeholder="Title..." />
+        <input class="search" type="text" name="name" size="40" value="" required placeholder="Name..." />
 
-        <input class="submit" type="submit" name="find_title" value="Search" />
-
-    </form>
-
-    <!---  END OF Title Search-->
-
-  <hr/>    
-    
-    <!--- START OF author Search -->
-
-    <form method="post" action="author_search.php" enctype="multipart/form-data">
-
-        <input class="search" type="text" name="author" size="40" value="" required placeholder="Author..." />
-
-        <input class="submit" type="submit" name="find_author" value="Search" />
+        <input class="submit" type="submit" name="find_name" value="Search" />
 
     </form>
 
-    <!---  END OF author Search-->
+    <!---  END OF Name Search--> 
     
   <hr/>    
     
-    <!--- START OF genre Search -->
+    <!--- START OF Where Search -->
 
-    <form method="post" action="genre_search.php" enctype="multipart/form-data">
+    <form method="post" action="where_search.php" enctype="multipart/form-data">
 
-        <select name="genre" required>
-            <option value="" disabled selected>Genre...</option>
+        <select name="where" required>
+            <option value="" disabled selected>Where...</option>
             <?php
             // retrive unique values in genre column
-            $genre_sql="SELECT DISTINCT `Genre` FROM `91879_book_reviews` ORDER BY `Genre` ASC ";
-            $genre_query=mysqli_query($dbconnect, $genre_sql);
-            $genre_rs=mysqli_fetch_assoc($genre_query);
+            $where_sql="SELECT DISTINCT `Genre` FROM `91879_book_reviews` ORDER BY `Genre` ASC ";
+            $where_query=mysqli_query($dbconnect, $where_sql);
+            $where_rs=mysqli_fetch_assoc($where_query);
             
             do {
                 
                 ?>
             
-            <option value="<?php echo $genre_rs['Genre']; ?>"><?php echo $genre_rs['Genre']; ?></option>
+            <option value="<?php echo $where_rs['Where']; ?>"><?php echo $where_rs['Where']; ?></option>
             
             <?php
                 
-            } // end of genre option retrieval
+            } // end of where option retrieval
             
-            while($genre_rs=mysqli_fetch_assoc($genre_query));
+            while($where_rs=mysqli_fetch_assoc($where_query));
             
             ?>
             
         </select>
         
-        <input class="submit" type="submit" name="find_genre" value="Search" />
+        <input class="submit" type="submit" name="find_where" value="Search" />
 
     </form>
 
-    <!---  END OF genre Search-->
+    <!---  END OF Where Search-->
+    
+    <hr/>    
+    
+    <!--- START OF meal_time Search -->
 
-  <hr/>    
+    <form method="post" action="meal_search.php" enctype="multipart/form-data">
+
+        <select name="meal" required>
+            <option value="" disabled selected>Meal Time...</option>
+            <?php
+            // retrive unique values in meal column
+            $meal_sql="SELECT DISTINCT `Genre` FROM `91879_book_reviews` ORDER BY `Genre` ASC ";
+            $meal_query=mysqli_query($dbconnect, $meal_sql);
+            $meal_rs=mysqli_fetch_assoc($meal_query);
+            
+            do {
+                
+                ?>
+            
+            <option value="<?php echo $meal_rs['Meal']; ?>"><?php echo $meal_rs['Meal']; ?></option>
+            
+            <?php
+                
+            } // end of meal option retrieval
+            
+            while($meal_rs=mysqli_fetch_assoc($meal_query));
+            
+            ?>
+            
+        </select>
+        
+        <input class="submit" type="submit" name="find_meal" value="Search" />
+
+    </form>
+
+    <!---  END OF meal Search-->  
+    
+    <hr/>    
+    
+    <!--- START OF vege Search -->
+
+    <form method="post" action="vege_search.php" enctype="multipart/form-data">
+
+        <select name="vege" required>
+            <option value="" disabled selected>Vegetarian???</option>
+            <?php
+            // retrive unique values in vege column
+            $vege_sql="SELECT DISTINCT `Genre` FROM `91879_book_reviews` ORDER BY `Genre` ASC ";
+            $vege_query=mysqli_query($dbconnect, $vege_sql);
+            $vege_rs=mysqli_fetch_assoc($vege_query);
+            
+            do {
+                
+                ?>
+            
+            <option value="<?php echo $vege_rs['Vege']; ?>"><?php echo $vege_rs['Vege']; ?></option>
+            
+            <?php
+                
+            } // end of vege option retrieval
+            
+            while($vege_rs=mysqli_fetch_assoc($vege_query));
+            
+            ?>
+            
+        </select>
+        
+        <input class="submit" type="submit" name="find_vege" value="Search" />
+
+    </form>
+
+    <!---  END OF vege Search-->
+    
+    <hr/> 
     
   <i>Ratings Search</i>
     
