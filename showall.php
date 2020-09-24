@@ -1,93 +1,31 @@
-<?php include "topbit.php" ; 
-
-$showall_sql="SELECT * FROM `91879_food_reviews` ORDER BY `Name` ASC";
-$showall_query=mysqli_query($dbconnect, $showall_sql);
-$showall_rs=mysqli_fetch_assoc($showall_query);
-$count=mysqli_num_rows($showall_query);
-
+<?php include("topbit.php");
 
 ?>
-        
-<div class="box main">
-            
-    <h2>All Items</h2>
-    
-    <?php
-    
-    // check if therer are any results
-    
-    if ($count<1)
-        
-    {
-        
-    ?>
-    
-    <div class="error">
-        Sorry! There and no results that match your search.
-        Please use the search bar in the sidebar to try again.
-    
-    </div>
-        
-    <?php
-    
-    } // and count 'if'
-        
-    // if therer are not any, output an error
-    else{
-        
-        do{
-            
-        ?>
-    
-            <!--- Results go here-->
-    <div class="results">
-        
-        <p>Title: <span class="sub_heading"><?php echo $showall_rs["Title"]; ?></span> </p>
-        
-        <p>Author: <span class="sub_heading"><?php echo $showall_rs["Author"]; ?></span> </p>
-        
-        <p>Genre: <span class="sub_heading"><?php echo $showall_rs["Genre"]; ?></span> </p>
-        
-        
-        <p>Rating: <span class="sub_heading">
-            
-            <?php 
-            for($x=0; $x < $showall_rs["Rating"]; $x++)
-                
-            {
-                echo "&#9733;";
-            }
-           
-            ?>
-            
-        </span> </p>
-        
-        <p><span class="sub_heading">Review / Response</span></p>
-        
-        <p>
-            <?php echo $showall_rs["Review"]; ?>
-        
-        </p>
-
-    
-    
-    </div>
-    
-    <br />
-    
-    <?php
-            
-        } // end of do
-        
-        while($showall_rs=mysqli_fetch_assoc($showall_query));
-        
-    } // end else
-        
-    // if there are some, display them
-        
-    ?>
 
 
-</div>    <!-- / main -->
+  
+        <div class="box main">
+            <h2>First Page heading</h2>
+            
+            <p>
+                Sugar plum powder dessert bonbon powder lollipop lollipop muffin I love. Tiramisu dessert I love sugar plum apple pie marzipan chocolate bar brownie. Pudding tiramisu caramels biscuit tiramisu. I love gummies gummies pie sweet pudding I love I love. Donut halvah candy oat cake donut. Caramels wafer danish jelly-o.
+            </p>
+            
+            <p>
+                Jelly beans gingerbread jelly tootsie roll. Lemon drops bear claw I love tiramisu candy canes cake. Jelly-o apple pie powder tart I    love candy tiramisu. Topping liquorice cake sesame snaps brownie. Lemon drops jelly beans brownie danish I love fruitcake cotton candy danish. Dragée pastry halvah macaroon I love chocolate bar caramels liquorice. Halvah cupcake muffin fruitcake pastry I love bear claw I love jelly. Tart chocolate bar croissant danish jelly. Sugar plum powder cupcake muffin gingerbread I love sweet.
+            </p>
+            
+            <p>
+                Biscuit jelly I love jelly-o candy canes chupa chups topping lemon drops I love. Sesame snaps macaroon lemon drops carrot cake I love. Chocolate bar gingerbread chupa chups. Dessert chocolate pastry liquorice tootsie roll lemon drops sweet macaroon liquorice. I love muffin bonbon. Cupcake apple pie chocolate cake bonbon topping. Macaroon gummi bears dragée caramels donut chocolate.
+            </p>
+            
+        </div>    <!-- / main -->
         
-<?php include "bottombit.php"; ?>
+
+                    <?php
+     include "bottom_bit.php";
+?>
+        
+       
+
+

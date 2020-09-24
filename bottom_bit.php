@@ -1,6 +1,6 @@
 <div class="box side">
         
-    <h2>Search | <a class="side_nav" href="show_all.php">Show All</a></h2>
+    <h2>Search | <a class="side_nav" href="showall.php">Show All</a></h2>
 
     <i>Type part of the title / author name if desired</i>
 
@@ -28,7 +28,7 @@
             <option value="" disabled selected>Where...</option>
             <?php
             // retrive unique values in genre column
-            $where_sql="SELECT DISTINCT `Where` FROM `91879_food_reviews` ORDER BY `Where` ASC ";
+            $where_sql="SELECT `Where` FROM `91879_food_reviews` ORDER BY `Where` ASC ";
             $where_query=mysqli_query($dbconnect, $where_sql);
             $where_rs=mysqli_fetch_assoc($where_query);
             
@@ -153,7 +153,13 @@
     
     </form>
     
+</div>  <!-- / side box -->
+    
     <!---  end of ratings form-->
+    
+        <div class="box footer">
+        CC Jessika Williams 2020
+    </div>  <!-- / footer -->
 
     </div>  <!-- / wrapper  -->
     
