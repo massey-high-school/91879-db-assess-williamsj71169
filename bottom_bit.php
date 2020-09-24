@@ -28,7 +28,7 @@
             <option value="" disabled selected>Where...</option>
             <?php
             // retrive unique values in genre column
-            $where_sql="SELECT DISTINCT `Genre` FROM `91879_book_reviews` ORDER BY `Genre` ASC ";
+            $where_sql="SELECT DISTINCT `Where` FROM `91879_food_reviews` ORDER BY `Where` ASC ";
             $where_query=mysqli_query($dbconnect, $where_sql);
             $where_rs=mysqli_fetch_assoc($where_query);
             
@@ -64,7 +64,7 @@
             <option value="" disabled selected>Meal Time...</option>
             <?php
             // retrive unique values in meal column
-            $meal_sql="SELECT DISTINCT `Genre` FROM `91879_book_reviews` ORDER BY `Genre` ASC ";
+            $meal_sql="SELECT DISTINCT `Meal Time` FROM `91879_food_reviews` ORDER BY `Meal Time` ASC";
             $meal_query=mysqli_query($dbconnect, $meal_sql);
             $meal_rs=mysqli_fetch_assoc($meal_query);
             
